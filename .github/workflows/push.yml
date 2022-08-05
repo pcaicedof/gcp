@@ -1,11 +1,12 @@
 on: push
 name: build
 jobs:
+  build:
   job_id:
     permissions:
       contents: 'read'
       id-token: 'write'
-
+    runs-on: ubuntu-latest
     steps:
     - id: 'auth'
       uses: 'google-github-actions/auth@v0'
