@@ -2,6 +2,7 @@ on: push
 name: build
 jobs:
   build
+    name: copy to gcs
     steps:
     - id: 'auth'
       uses: 'google-github-actions/auth@v0'
