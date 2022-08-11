@@ -8,7 +8,7 @@ jobs:
     - name: Step 1 - Create a temporary artifact downloads folder
       run: |
         mkdir downloads
-        ls - l
+        ls -l
     - id: 'auth'
       uses: 'google-github-actions/auth@v0'
       with:
