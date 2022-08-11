@@ -12,7 +12,7 @@ jobs:
         path: cloud_functions/**
     - name: Step 1 - Create a temporary artifact downloads folder
       run: |
-        mkdir cloud_functions
+        cd ${{ github.workspace }}
         ls -l
         pwd
     - id: 'auth'
