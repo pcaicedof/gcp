@@ -13,6 +13,7 @@ jobs:
     - name: Step 1 - Create a temporary artifact downloads folder
       run: |
         cd ${{ github.workspace }}
+        cd ..
         ls -l
         pwd
     - id: 'auth'
