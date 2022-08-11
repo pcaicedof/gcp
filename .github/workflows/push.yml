@@ -5,16 +5,15 @@ jobs:
     name: copy to gcs
     runs-on: ubuntu-latest
     steps:
-    - name: Step 1 - Create a temporary artifact downloads folder
-      run: |
-        mkdir downloads
-        ls -l
-        pwd
     - name: Step 2 - upload artifacts
       uses: actions/upload-artifact@v3
       with:
         name: cloud_functions_artifacts
         path: cloud_functions/**
+    - name: Step 1 - Create a temporary artifact downloads folder
+      run: |
+        ls -l
+        pwd
     - id: 'auth'
       uses: 'google-github-actions/auth@v0'
       with:
