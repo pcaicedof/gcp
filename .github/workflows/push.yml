@@ -10,6 +10,11 @@ jobs:
         mkdir downloads
         ls -l
         pwd
+    - name: Step 2 - upload artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: cloud_functions_artifacts
+        path: cloud_functions/**
     - id: 'auth'
       uses: 'google-github-actions/auth@v0'
       with:
