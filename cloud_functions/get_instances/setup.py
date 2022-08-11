@@ -109,7 +109,7 @@ def main():
     write_to_bq_from_df(PROJECT, DATASET, TABLE_NAME, df)
     end_time = datetime.now()
     time_elapsed = end_time - start_time
-    print("end Time =", time_elapsed)
+    print("end  Time =", time_elapsed)
 
 
 if __name__ == '__main__':
