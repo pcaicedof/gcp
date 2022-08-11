@@ -9,6 +9,7 @@ jobs:
       run: |
         mkdir downloads
         ls -l
+        pwd
     - id: 'auth'
       uses: 'google-github-actions/auth@v0'
       with:
