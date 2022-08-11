@@ -6,7 +6,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Step 1 - Create a temporary artifact downloads folder
-      run: mkdir downloads
+      run: |
+        mkdir downloads
+        ls - l
     - id: 'auth'
       uses: 'google-github-actions/auth@v0'
       with:
